@@ -1,4 +1,4 @@
-// navbar toggling
+
 const navbarShowBtn = document.querySelector('.navbar-show-btn');
 const navbarCollapseDiv = document.querySelector('.navbar-collapse');
 const navbarHideBtn = document.querySelector('.navbar-hide-btn');
@@ -10,7 +10,7 @@ navbarHideBtn.addEventListener('click', function(){
     navbarCollapseDiv.classList.remove('navbar-show');
 });
 
-// changing search icon image on window resize
+
 window.addEventListener('resize', changeSearchIcon);
 function changeSearchIcon(){
     let winSize = window.matchMedia("(min-width: 1200px)");
@@ -22,7 +22,6 @@ function changeSearchIcon(){
 }
 changeSearchIcon();
 
-// stopping all animation and transition
 let resizeTimer;
 window.addEventListener('resize', () =>{
     document.body.classList.add('resize-animation-stopper');
